@@ -1,0 +1,32 @@
+dark blue: #2e323f
+medium blue: #3b4050
+light blue: #6f737f
+white: #fff
+gold: #a59678
+
+
+
+Fonts: 
+
+1 - Oswald Bold - font size: 18px
+2 - Oswald Bold - font size: 90px
+3 - Montserrat Regular- font size: 24px
+4 - Oswald Bold - font size: 24px
+5 - Oswald Bold - font size: 30px
+    Montserrat Regular- font size: 18px
+6 - Oswald Bold - font size: 36px
+    Montserrat Regular- font size: 21px
+7 - Oswald Bold - font size: 30px
+    Montserrat Regular- font size: 18px
+8 - Oswald Bold - font size: 24px
+9 - Oswald Bold - font size: 21px
+    Montserrat Regular- font size: 16px
+
+    
+px to rem
+18 - 1.125rem
+90 - 5.625rem
+24 - 1.5rem
+30 - 1.875rem
+36 - 2.25rem
+21 - 1.313rem
