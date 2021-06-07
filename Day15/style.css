@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+.example{
+    width: 90%;
+    margin: 5em auto;
+    padding: 10em 0;
+    background-color: steelblue;
+}
+
+/* can add multiple examples
+ @media (min-width: 600px) and (max-width:900px){
+
+} */
+
+@media (min-width: 600px){
+    .example{
+        background-color: olivedrab;
+    }
+}
+
+/* @media (max-width: 600px){
+    .example{
+        background-color: plum;
+    }
+} */
+
+@media (min-width: 800px){
+    .example{
+        background-color: rosybrown;
+    }
+}
