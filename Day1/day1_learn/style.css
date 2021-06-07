@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+/* why use percentages over fixed heights
+
+
+body{
+    margin: 0;
+}
+
+.parent{
+    background-color: #23424A;
+    padding: 50px;
+    width: 900px; this will turn our site into non responsive
+    NOTE: by default the width of the document is 100% that means 
+    websites by default are responsive hence instead of px use % as they 
+    take values from parents which in turn makes them responsive
+    margin: 0 auto;
+    width: 80%;
+}
+
+.child{
+    background-color: #38CFD9;
+    width: 750px;  will cause issue as inner box gets fixed hence this will not be responsive
+    hence if it has text inside it will cause over flow
+    we can use:
+    overflow: hidden;
+    but this will cut off the data 
+    width: 50%; in comparison to it's parent
+    height: 250px;  normally not done if we use heights as static and width percentage the text will still overflow hence also use percentage
+    usaually width and height and child is not set as it takes it from the parent
+} */
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    background: #23424A;
+    color: white;
+
+    width: 80%;
+    margin: 0 auto;
+
+    /* will cause the text to cut out after a certain height is reached
+    height: 300px; 
+    by not using it all will cause it to be responsive as it is by default responsive
+    if not use: in case you want it with respect to a nice background with space */
+
+    padding: 5em; /* 5em is 80px: 16 * 5 default font size of the browser is 16 if you have not set it else use the parent font-size*/
+}
+
+/*https://www.youtube.com/watch?v=_-aDOAMmDHI watch*/
