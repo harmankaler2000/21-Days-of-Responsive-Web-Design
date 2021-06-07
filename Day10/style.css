@@ -1,0 +1,60 @@
+.container{
+    background: pink;
+    height: 50vh;
+    width: 80vw;
+    padding: 0.5em;
+    margin: 25vh auto 0;
+    /*flex*/
+    display: flex;
+    /*by default is row*/
+    flex-direction: row;
+    /* flex-wrap: wrap;  by default is nowrap*/
+    /* flex-wrap: wrap; */
+    /* short hand for flex dir and flex wrap flex-flow: row nowrap; */
+
+    /* default value for justify content is flex-start */
+    /* justify-content: center; */
+
+    /* default is stretch */
+    align-items: stretch;
+
+    /* align-content: flex-end; */
+
+}
+
+.item{
+    background: lightblue;
+    margin: 0.5em;
+    /* width: 25%; */
+}
+
+.one{
+    /* flex grow has a default value of 0 */
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px; */
+    flex: 1 1 250px;
+    order: 3;
+}
+.two{
+    /* flex grow has a default value of 0 */
+    /* flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 250px; */
+    flex: 1 2 250px;
+    align-self: flex-end;
+    order: 2;
+}
+.three{
+    /* flex grow has a default value of 0 */
+    /* flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: 250px; */
+    /* shorthand: flex */
+    flex: 3 1 250px;
+    order: 1;
+}
+
+/* .big{
+    font-size: 2em;
+} */
