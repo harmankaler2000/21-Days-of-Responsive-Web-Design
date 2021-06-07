@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* For mobile screens or devices with width < 700px */
+
+*, *::before, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hamburger menu starts */
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #072A2D;
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+
+/* Hamburger menu ends */
+
+
+
+
+
+/* Header navbar menu starts */
+.header{
+    background-color: #2e323f;
+    text-align: center;
+    padding: 1em;
+}
+
+ul li{
+    list-style-type: none;
+    padding: .5em 0em;
+}
+
+.nav__list a{
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-size: 1.125rem;
+}
+
+.nav__link--button{
+    background-color: #a59678;
+    padding: .25em .75em;
+    border-radius: 100px;
+}
+
+/* Header navbar menu ends */
+
+/* Container */
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+/* Main - content starts */
+
+.main__content{
+    background-color: #3b4050;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 2rem;
+    padding: 2em;
+}
+
+.title{
+    line-height: 1.1em;
+    margin-bottom: .5em;
+}
+
+.gold{
+    color: #a59678;
+}
+
+.title--text{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #a59678;
+    font-weight: 500;
+    padding: .25em 1em;
+    border-radius: 100px;
+}
+/* main content ends */
+
+/* Middle list starts */
+.middle__list{
+    background-color: #f1f1f1;
+    color: #a59678;
+    font-family: 'Oswald';
+    font-size: 1.875rem;
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.list__para{
+    color: #2e323f;
+    font-family: 'Montserrat';
+    font-size: 1.125rem;
+    padding: 1.5em 3em;
+}
+
+/* Middle list ends */
+
+/* Second list starts */
+.second__list{
+    padding: 4em;
+    text-align: center;
+}
+
+.second__header{
+    color: #a59678;
+    font-family: 'Oswald';
+    font-size: 2.25rem;
+}
+
+.second__list p{
+    font-size: 1.313rem;
+    padding: 1.5em 1em;
+}
+
+.image{
+    width: 100%;
+    padding: 2em 1em;
+}
+
+/* Inside list of second list start */
+
+.inside__list{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1.125rem;
+}
+
+.element h2{
+    font-family: 'Oswald';
+    font-size: 1.875rem;
+}
+
+.element{
+    background-color: #2e323f;
+    margin-top: 1em;
+    padding: 2em 0;
+}
+
+/* Inside list of second list end */
+
+/* Bottom section starts */
+
+.bottom{
+    background-color: #2e323f;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.bottom h1{
+    padding: 1.5em 0em .5em 0em;
+    font-family: 'Oswald';
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.bottom h4{
+    padding-top: 1em;
+    color: #a59678;
+    font-family: 'Oswald';
+    font-size: 1.313rem;
+}
+
+.bottom p{
+    padding: 0em 5em;
+    padding-top: 1em;
+}
+
+.bottom a{
+    padding: 1em 0 .5em 0;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* Bottom section end */
+
+/* minimum screen width 700px for medium sized screens */
+
+@media (min-width: 700px)
+{
+    /* Header nav starts*/
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        height: auto;
+        position: relative;
+        justify-content: flex-end;
+    }
+
+    .nav__list{
+        display: flex;
+        margin: 0;
+    }
+
+    .nav__item{
+        margin: 0 0 0 1.5em;
+    }
+
+    .logo{
+        height: 30px;
+    }
+
+    .logo__div{
+        padding: .5em 0 0 .5em;
+    }
+
+    /* Header nav ends */
+
+    /* middle list starts */
+    .image{
+        max-width: 100%;
+    }
+    .second__list .row{
+        flex-direction: column;
+    }
+
+    .inside__list{
+        display: flex;
+        padding-right: 1.5em;
+    }
+    .element{
+        margin-left: 1em;
+    }
+
+    .second__list--primary{
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .second__list--primary h2{
+        padding-left: .5em;
+    }
+    /* middle list ends */
+
+    /* bottom list  starts*/
+    .bottom .container{
+        padding: 1em;
+        margin: 0em 4em;
+    }
+    .bottom h4, .bottom p, .bottom a{
+        padding: 1em 2em 1em 0em;
+        text-align: left;
+    }
+
+    .bottom .row{
+        align-items: baseline;
+    }
+
+    .bottom .col{
+        justify-content: space-around;
+    }
+
+    .bottom--header{
+        width: 30%;
+    }
+    
+    /* bottom list ends */
+}
+
+@media (min-width: 1000px){
+    .title{
+        margin-right: 2em;
+    }
+
+    .second__list .container{
+        display: flex;
+    }
+    .second__list .row{
+        flex-direction: row;
+        justify-content: baseline;
+    } 
+    .second__list .col{
+        width: 100%;
+        margin: 1em;
+    }
+    
+    .inside__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 3em;
+    }
+}
